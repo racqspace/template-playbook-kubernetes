@@ -87,6 +87,8 @@ jobs:
     if: ${{ failure() }}
     {%- endraw %}
     needs:
+      - ansible-linter
+      - yaml-linter
       - test
     steps:
       - name: Notify Slack channel on failure
