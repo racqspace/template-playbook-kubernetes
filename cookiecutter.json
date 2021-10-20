@@ -1,0 +1,4 @@
+{
+    "playbook_name": "my_playbook",
+    "ansible_role": "namespace.role_namespace"
+}
